@@ -2,43 +2,43 @@
 # Abstractive Text Summarization with Word Sense Disambiguation and Seq2Seq Model
 
 ## Introduction
-This repository contains the code for an Abstractive Text Summarization model that incorporates Word Sense Disambiguation (WSD) using WordNet and utilizes a Seq2Seq architecture.
+This repository presents an Abstractive Text Summarization model incorporating Word Sense Disambiguation (WSD) using WordNet and employing a Seq2Seq architecture.
 
 ## Overview
-The code includes the following components:
+The repository encompasses the following components:
 
 1. **Data Preprocessing:**
-   - Utilizes the CNN/Daily Mail dataset for training.
-   - Implements WSD using WordNet to disambiguate word senses in the text.
+   - Employing the CNN/Daily Mail dataset for training purposes.
+   - Implementing WSD using WordNet to disambiguate word senses in the text.
 
 2. **Model Architecture:**
-   - Implements a Seq2Seq model for abstractive text summarization.
-   - Utilizes an Encoder-Decoder architecture with LSTM layers.
+   - Incorporating a Seq2Seq model for abstractive text summarization.
+   - Utilizing an Encoder-Decoder architecture with LSTM layers.
 
 3. **Tokenization and Padding:**
-   - Tokenizes and preprocesses the text data.
-   - Converts text to sequences and pads sequences to a specified length.
+   - Tokenizing and preprocessing the text data.
+   - Converting text to sequences and padding sequences to a specified length.
 
 4. **Training:**
-   - Compiles the model using the RMSprop optimizer and sparse categorical crossentropy loss.
-   - Trains the model on the provided dataset for a specified number of epochs.
+   - Compiling the model using the RMSprop optimizer and sparse categorical crossentropy loss.
+   - Training the model on the provided dataset for a specified number of epochs.
 
 5. **Model Saving and Loading:**
-   - Includes functions to save and load both the preprocessed texts and the trained Seq2Seq model.
+   - Including functions to save and load both the preprocessed texts and the trained Seq2Seq model.
 
 6. **Summarization Function:**
-   - Defines a function to generate abstractive summaries for input articles.
+   - Defining a function to generate abstractive summaries for input articles.
 
 ## Instructions
-To use this code, follow these steps:
+To utilize this code, follow these steps:
 
-1. Install necessary libraries: `tensorflow`, `nltk`, `datasets`. Ensure you have the required dependencies by running the provided installation commands.
+1. Install necessary libraries: Ensure the required dependencies (`tensorflow`, `nltk`, `datasets`) are installed by running the provided installation commands.
 
-2. Run the notebook: Execute the notebook `Abstractive_Text_Summarisation_with_wsd&seq2seq_model.ipynb` to train the model and perform text summarization.
+2. Run the notebook: Execute the notebook `Abstractive_Text_Summarisation_with_wsd&seq2seq_model.ipynb` to train the model and conduct text summarization.
 
 3. Save and Load Model: The code includes functions to save and load both preprocessed texts and the trained model. Customize the paths according to your preferences.
 
-4. Summarize Text: Use the `summarize_text` function to generate abstractive summaries for input articles.
+4. Summarize Text: Utilize the `summarize_text` function to generate abstractive summaries for input articles.
 
 ## Example Usage
 ```python
@@ -46,7 +46,6 @@ input_article = '''[Your input article here]'''
 summary = summarize_text(input_article)
 print("Generated Summary:", summary)
 ```
-
 
 ## References
 - [CNN/Daily Mail Dataset](https://huggingface.co/datasets/cnn_dailymail)
