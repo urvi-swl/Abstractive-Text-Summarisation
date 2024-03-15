@@ -53,4 +53,4 @@ print("Generated Summary:", summary)
 - [WordNet](https://www.nltk.org/howto/wordnet.html)
 
 ## Author
-Nikesh Kumar
+Urvi Siwal
